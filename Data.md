@@ -37,7 +37,9 @@ The median household income values are corrected using a cumulative inflation ra
 The final census data used in my analysis consist of 88 neighborhoods in Pittsburgh and 36 neighborhoods in Pittsburgh, for which I had went through the process of matching the information in the Zillow json files and those census data. In some cases there are “”missing data,” and they are replaced by the average value of each columns in each city.
 
 In figure 1. I show the distribution of median household income in each neighborhood in Pittsburgh (right panel) and Cleveland (left panel). Please note that both “total population” and “income” columns have been normalized using the “min-max normalization” across these two cities. It is interesting to note that Pittsburgh has much higher average income than Cleveland. 
-![Figure 1](/images/Pitt_Clev_income_map.png)
+| ![Figure 1](/images/Pitt_Clev_income_map.png) |
+|:--:| 
+| **Figure 1** : median household income in each neighborhood in Pittsburgh (right panel) and Cleveland (left panel). Please note that both “total population” and “income” columns have been normalized using the “min-max normalization” across these two cities. |
 
 ## 3.	Venue data:
 The venue data consists of two parts:
@@ -52,11 +54,15 @@ Please note that although the foursquare sandbox account usage limits the max ve
 I can make sure to acquire a complete list of all venues within a neighborhood. 
 To make sure a certain venue is located within a neighborhood, I used the [shapely](pypi.org/project/Shapely/) modules
 to do so. In figure 2 I show the spatial distribution of all the venues in red points queried from Foursqure.com for Pittsburgh. 
-![Figure 2](/images/Pittsburgh_venues.png)
+| ![Figure 2](/images/Pittsburgh_venues.png) |
+|:--:| 
+| **Figure 2** : Spatial distribution of all the venues in red points queried from Foursqure.com for Pittsburgh. |
 
 #### 2)	Information of the target restaurant chains:
 To acquire the location of those restaurants, I searched the their names and find out which Cleveland neighborhood 
 they are in based on their locations. Again, I used the “shapely” modules to do so.
-In the right panel of figure 3, I show the data of those restaurants (name, coordinate, neighborhood).
+In the left panel of figure 3, I show the data of those restaurants (name, coordinate, neighborhood).
 In the right panel, their locations are marked by red (Shake Shack), pink (BIBIBOP Asian Grill), blue (Potbelly), and green (Krispy Krunchy Chicken) markers. 
-![Figure 3](/images/Cleveland_restaurants.png)
+| ![Figure 3](/images/Cleveland_restaurants.png) |
+|:--:| 
+| **Figure 3**: Left panel: data of restaurants (name, coordinate, neighborhood) in this study. Right panel: restaurant locations marked by red (Shake Shack), pink (BIBIBOP Asian Grill), blue (Potbelly), and green (Krispy Krunchy Chicken) markers. |
