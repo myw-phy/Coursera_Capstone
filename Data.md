@@ -1,3 +1,4 @@
+# Data
 The dataset consists of three parts: **census data, geometric data (neighborhood json files), and venue data from Foursqure.com**. In the following I will explain the data acquiring and data cleaning processes for these three types of data: 
 
 ## 1. Json files:
